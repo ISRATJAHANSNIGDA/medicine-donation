@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine Donation Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        main {
+            padding: 20px 40px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #008080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f0f0f0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicine Donation Portal</h1>
+        <p>Give unused medicines a second life. Help those in need.</p>
+    </header>
+
+    <main>
+        <form>
+            <h2>Donate Medicines</h2>
+
+            <label for="donorName">Your Name</label>
+            <input type="text" id="donorName" name="donorName" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="medicineName">Medicine Name</label>
+            <input type="text" id="medicineName" name="medicineName" required>
+
+            <label for="expiryDate">Expiry Date</label>
+            <input type="date" id="expiryDate" name="expiryDate" required>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" required min="1">
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Submit Donation</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 Medicine Donation Initiative. All rights reserved.
+    </footer>
+</body>
+</html>
